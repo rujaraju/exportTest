@@ -1,0 +1,14 @@
+{
+  "name": "exporttest",
+  "version": "1.0.0",
+  "description": "test to export high res files of apex charts",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan R",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^5.1.0"
+  }
+}
