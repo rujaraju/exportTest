@@ -6,7 +6,7 @@ const PDF2Pic = require("pdf2pic");
 
 const pdf2pic = new PDF2Pic({//settings for the png
     density: 300,           // output pixels per inch
-    savename: "pdf2pic",   // output file name
+    savename: "apex",   // output file name
     savedir: __dirname,    // output file location
     format: "png",          // output file format
     size: "5000x5000"         // output size in pixels
@@ -24,7 +24,7 @@ function timeout(ms) {
     await page.setContent(html)
     await timeout(1000)//this is a fix because the apexchart is animated so needs to wait until it's completely rendered
     await page.pdf({path: 'apex.pdf'})
-    await page.screenshot({path: 'apex.jpg', type: 'jpeg', quality: 100});//comes out lo resolution so needs a fix
+    //await page.screenshot({path: 'apex.jpg', type: 'jpeg', quality: 100});//comes out lo resolution so needs a fix
     await browser.close();
     await pdf2pic.convert(path.join(__dirname, "apex.pdf"))
 })();
