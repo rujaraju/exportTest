@@ -1,4 +1,4 @@
-Works with node.js and GraphicsMagick<br />
+Works with node.js and GraphicsMagick (also install Ghostscript)<br />
 $ npm install //for dependencies<br />
 then <br />
 $ node export.js //to run application<br />
